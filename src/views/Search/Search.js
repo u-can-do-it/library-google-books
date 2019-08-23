@@ -167,7 +167,6 @@ class Search extends React.Component {
 
     return (
       <div className={style.wrapper}>
-        <SearchForm search={this.searchHandler} className={style.SearchForm} />
         <div className={style.container}>
           <div className={style.searchFilter}>
             <SearchFilter
@@ -175,12 +174,15 @@ class Search extends React.Component {
               resetFilters={this.filterResetHandler}
             />
           </div>
-          <List loadMore={this.loadOnScroll} className={style.list}>
-            {items}
-            <li className={style.spinner}>
-              {this.state.isLoading ? <Loader /> : null}
-            </li>
-          </List>
+          <div className={style.list}>
+            <SearchForm search={this.searchHandler} />
+            <List loadMore={this.loadOnScroll}>
+              {items}
+              <li className={style.spinner}>
+                {this.state.isLoading ? <Loader /> : null}
+              </li>
+            </List>
+          </div>
         </div>
       </div>
     );
