@@ -1,0 +1,33 @@
+.form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  height: 35px;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+.input:focus {
+  outline: none;
+  background-color: #ccc;
+}
+
+.button {
+  height: 35px;
+  width: 35px;
+  background: transparent;
+  outline: none;
+  margin-left: -35px;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+}

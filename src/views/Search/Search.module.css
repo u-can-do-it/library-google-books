@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchFilter {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.spinner {
+  margin: 50px auto;
+}
