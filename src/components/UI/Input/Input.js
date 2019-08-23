@@ -33,7 +33,7 @@ const input = props => {
           className={inputClasses.join(" ")}
           onChange={e => props.changed(e, props.inputIdentifier)}
         >
-          <option defaultValue disabled>
+          <option selected disabled>
             {props.elementConfig.placeholder}
           </option>
           {props.elementConfig.options.map(option => (
