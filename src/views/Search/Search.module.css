@@ -11,16 +11,25 @@
 
 @media (max-width: 700px) {
   .searchFilter {
-    max-width: 400px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .spinner {
+  padding-top: 50px;
 }
+
 .list {
   max-width: 600px;
-  min-width: 300px;
+  min-width: 400px;
+}
+@media (max-width: 700px) {
+  .list {
+    max-width: unset;
+    min-width: unset;
+    width: 100%;
+  }
 }
 .searchForm {
   width: 100%;
