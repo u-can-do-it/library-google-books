@@ -2,17 +2,14 @@
   max-width: 1200px;
   display: flex;
 }
-.SearchForm {
-  max-width: 600px;
-}
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .container {
     flex-direction: column;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .searchFilter {
     max-width: 400px;
     margin: 0 auto;
@@ -20,10 +17,11 @@
 }
 
 .spinner {
-  width: 600px;
-  height: 120px;
-  padding-top: 50px;
 }
 .list {
   max-width: 600px;
+  min-width: 300px;
+}
+.searchForm {
+  width: 100%;
 }

@@ -169,13 +169,15 @@ class Search extends React.Component {
       <div className={style.wrapper}>
         <div className={style.container}>
           <div className={style.searchFilter}>
+            <div className={style.searchForm}>
+              <SearchForm search={this.searchHandler} />
+            </div>
             <SearchFilter
               filter={this.filterHandler}
               resetFilters={this.filterResetHandler}
             />
           </div>
           <div className={style.list}>
-            <SearchForm search={this.searchHandler} />
             <List loadMore={this.loadOnScroll}>
               {items}
               <li className={style.spinner}>
